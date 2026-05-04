@@ -1,0 +1,88 @@
+ \documentclass[10pt]{resume}
+\usepackage[scaled]{berasans}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+%------------------------------------------------
+
+\name{Utsav Garg}
+\links{\href{https://github.com/UtsvGrg}{github.com/utsvgrg}}
+\links{\href{https://www.linkedin.com/in/utsvgrg/}{linkedin.com/in/utsvgrg/}}
+\links{\href{mailto:utsavgarg.india@gmail.com}{utsavgarg.india@gmail.com}}
+\links{\href{tel:+919654459835}{+919654459835}}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+    \begin{rSection}{Summary}
+        Software Developer with expertise in backend systems (C\#, .NET, Python, FastAPI) and AI/ML (LLMs, RAG, transformers). Architected a semantic code indexing engine with hybrid search and Model Context Protocol (MCP) integration at FNZ. Deployed generative AI solutions at IBM. Strong foundation in NLP, computer vision, and distributed backend development.
+    \end{rSection}
+
+    \begin{rSection}{Skills}
+        \textbf{Languages:} C\#, Python, VB, C/C++, Java, SQL (Microsoft SQL, SQLite), Bash, JavaScript \\
+        \textbf{Frameworks \& Tools:} .NET, ASP.NET, Roslyn, FastAPI, Flask, Docker, Model Context Protocol (MCP), Claude Code, OpenID Connect (OIDC), RESTful API, CI/CD, Git, Azure DevOps, JIRA \\
+        \textbf{Cloud \& Databases:} Amazon EC2, MongoDB, SQLite Full-Text Search (FTS5), ngrok \\
+        \textbf{AI/ML:} PyTorch, TensorFlow, HuggingFace, RAG, LLM fine-tuning, embeddings, vector databases, prompt engineering
+    \end{rSection}
+
+    \begin{rSection}{Education}
+        \begin{rSubsection}{B.Tech, Indraprastha Institute of Information Technology Delhi}{Dec 2021 - May 2025}
+            \item Computer Science Engineering (CSE) -- 8.93 CGPA
+        \end{rSubsection}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{Work Experience}
+        %------------------------------------------------
+        \begin{rSubsection}{FNZ -- Software Developer (SDE 2)}{Jan 2025 -- Current}
+            \item Promoted from Junior Analyst Developer. Engineered backend features on FNZOneX, a large-scale financial services platform in C\# and VB; optimized SQL queries and streamlined API integration and release management across global agile teams using Azure DevOps.
+            \item Architected CodeMap, a semantic code indexing engine (.NET, Roslyn, SQLite Full-Text Search) exposed as a Model Context Protocol (MCP) server for Claude Code. Implemented hybrid multi-signal search (BM25 + PageRank + LLM summaries), incremental SHA-256-based indexing processing 8,600+ files in 14 seconds, database access layer scanning across 18 extraction patterns, and token-budget-optimized context selection using submodular optimization.
+            \item Developed supporting microservices with FastAPI deployed on Amazon EC2 with ngrok tunneling; integrated OpenID Connect (OIDC) authentication and MongoDB for persistent metadata storage.
+        \end{rSubsection}
+
+        \begin{rSubsection}{IBM -- Summer Internship}{May 2024 -- Jul 2024}
+            \item Deployed a generative AI model with IBM's watsonx.governance suite, automating fairness assessment and de-bias explanations for risk prediction at an auto insurance company.
+            \item Drove client-facing AI strategy sessions, translating business requirements into deployable generative AI solutions aligned with ethical AI guidelines.
+        \end{rSubsection}
+        %------------------------------------------------
+
+        \begin{rSubsection}{MIDAS Lab, IIITD -- Undergraduate Researcher}{Jan 2024 -- Jul 2024}
+            \item Trained MOS prediction models using self-supervised learning (wav2vec2), achieving a 45\% improvement in prediction accuracy over state-of-the-art models on the SOMOS dataset.
+            \item Engineered prosodic variation detection using Tacotron2 with TOBI labels, improving naturalness scores (LCC, SRCC).
+        \end{rSubsection}
+
+    \end{rSection}
+
+    %	PROJECTS SECTION
+    \begin{rSection}{Projects}
+        %------------------------------------------------
+
+        \begin{rSubsection}{CodeRAG: LLM-Powered Codebase Q\&A System (B.Tech Project)}{}
+            \item Designed a novel context injection technique using a SummaryGen-based RAG pipeline with CodeBERT, ChromaDB, and LLaMA for retrieving and answering codebase-specific queries. Fine-tuned LLaMA and OpenAI models on real GitHub commits for design plan generation and post-commit code prediction.
+        \end{rSubsection}
+
+        \begin{rSubsection}{FinSync: Financial Data Aggregation Platform}{\href{https://github.com/UtsvGrg/FinSync-Financial-Aggregation-Platform}{Github}}
+            \item Engineered a scalable dockerized platform integrating PNL, Balance Sheet, and Cash Flow data using Flask, SQLite, and Docker, enabling real-time query federation with data validation and normalization pipelines.
+        \end{rSubsection}
+
+        \begin{rSubsection}{Emotion-Cause Extraction \& NLP Pipeline}{\href{https://github.com/UtsvGrg/Natural_Language_Processing}{Github}}
+            \item Implemented RNNs, LSTMs, GRUs, and transformer models from scratch; fine-tuned BERT, GPT, and T5 for NER, text similarity, and machine translation, achieving highest F1, BLEU, and BERTScore across all assignments.
+            \item Developed Emotion-Cause Pair Extraction system for SemEval using BertForTokenClassification with six specialized NER models for identifying emotion-causing textual spans.
+        \end{rSubsection}
+
+        \begin{rSubsection}{Autonomous Driving Segmentation System}{\href{https://github.com/UtsvGrg/CV_Retinal_Vessel_Segmentation}{Github}}
+            \item Developed segmentation on Indian driving dataset using transfer learning with DeepLabV3. Benchmarked SOTA detectors (DETR, EfficientDet) on COCO and Pascal VOC using MMSeg.
+        \end{rSubsection}
+
+    \end{rSection}
+
+    %  ACHIEVEMENTS SECTION
+    \begin{rSection}{Achievements}
+        \begin{rSubsection}{}{}
+            \item Dean's Award of Academic Excellence 2024 \hfill Student Senate Representative, B.Tech 2025
+            \item ACM Bid-Code Coding Competition -- First Runner-up \hfill Competitive Programming: Codeforces Rating 1343
+            \item JSTSE Scholar -- rank 147 out of 19,331 students \hfill Events Lead (Salt n Pepper); Executive Member (IEEE)
+        \end{rSubsection}
+    \end{rSection}
+
+\end{document}
